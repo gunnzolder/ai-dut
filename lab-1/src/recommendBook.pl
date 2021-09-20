@@ -34,8 +34,8 @@ fan("Єлізавета Косарєва", "Полежака Артем Яков
 fan("Аліна Бородавка", "Семесюк Іван Леонідович").
 
 recommendBook(Z) :-
-	fan(Z, Y),
-	author(X, Y),
+    fan(Z, Y),
+    author(X, Y),
     string_concat("Автор: ", Y, A),
     write(A), nl,
     write("Кгига: "), write(X).
